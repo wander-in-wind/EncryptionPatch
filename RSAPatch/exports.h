@@ -2,6 +2,7 @@
 #include <Windows.h>
 #include <vector>
 #include <string>
+#include <filesystem>
 
 extern "C" FARPROC OriginalFuncs_version[17];
 

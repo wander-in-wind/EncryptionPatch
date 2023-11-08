@@ -1,6 +1,5 @@
 #include "exports.h"
-#include "Utils.h"
-#include <filesystem>
+#include "Console.h"
 
 FARPROC OriginalFuncs_version[17];
 
@@ -16,7 +15,7 @@ void Exports::Load()
 	// load version.dll from system32
 	if (!version)
 	{
-		Utils::ConsolePrint("Failed to load version.dll from system32\n");
+		Console::Print("Failed to load version.dll from system32\n");
 		return;
 	}
 
@@ -26,10 +25,8 @@ void Exports::Load()
 		OriginalFuncs_version[i] = GetProcAddress(version, ExportNames_version[i].c_str());
 		if (!OriginalFuncs_version[i])
 		{
-			Utils::ConsolePrint("Failed to get address of %s\n", ExportNames_version[i].c_str());
+			Console::Print("Failed to get address of %s\n", ExportNames_version[i].c_str());
 			return;
 		}
 	}
-	
-	Utils::ConsolePrint("Loaded version.dll from system32\n");
 }

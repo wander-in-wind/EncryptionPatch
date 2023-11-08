@@ -134,11 +134,13 @@
   <ItemGroup>
     <ClCompile Include="dllmain.cpp" />
     <ClCompile Include="exports.cpp" />
-    <ClCompile Include="Utils.cpp" />
+    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="Memory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="exports.h" />
-    <ClInclude Include="Utils.h" />
+    <ClInclude Include="Memory.h" />
+    <ClInclude Include="Console.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Exports.def" />

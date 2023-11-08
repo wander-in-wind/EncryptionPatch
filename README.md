@@ -1,9 +1,8 @@
 # EncryptionPatch
-dynamic anime patching to rsa circumvention 4.1.50!
+dynamic anime patching to rsa circumvention 4.2.0!
 
-- bypass sign when doing sussy http things
-- use certain anime key when checking seed sign
-- no xorification after tokenization
+- bypass sign for http and seed
+- second mt init seed set to 1337
 
 ### Any questions?
 Join our [discord server](https://discord.gg/sHZuMpCpVw)
